@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Me</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/product_details.css">
+    <link rel="stylesheet" media="screen and (max-width: 950px)" href="css/phone.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <nav class="navbar">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a href="index.html" class="logo">
+                    <h1>ShopMe</h1>
+                </a>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar_menu" id="navbarSupportedContent">
+
+                    <ul class="nav_navbar">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Shop</a>
+                            <div class="dropdown-content">
+                                <a href="/shop.html">Products</a>
+                                <a href="/product_details.html">Single Product</a>
+                                <a href="/profile.html">Profile</a>
+                                <a href="/login.html">Login</a>
+                            </div>
+                          </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="cart">
+
+                            <a href="cart.html"><img src="/img/cart_icon.png" alt=""></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="search ">
+                    <input type="search" name="" id="" placeholder="Search...">
+                    <button type="submit">Search</button>
+
+                </div>
+                <div class="fa_user">
+                    <a href="signup.html"><i class='far fa-user' style='font-size:25px;color:white'></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="user_profile">
+        <div id="photo_u_name">
+            <img src="/img/profile.png" alt="">
+            <span>himsing04</span>
+
+        </div>
+        <hr>
+        <div id="name_email_mob">
+
+            <span>Name - Himanchal Singh</span>
+            <span>Email - youremail@company.com</span>
+            <span>Mobile Number - +91 &nbsp;1234567890</span>
+
+        </div>
+        <hr>
+        <div id="m_address">
+            <h3>Manage Addresses</h3>
+            <div class="address_det">
+                <h4>Himanchal Singh </h3>
+                <p>Shop No 9, 57/a, Arsiwala Bldg, Wodehouse Rd, Colaba, Mumbai, Maharashtra,400005</p>
+                <h5>+91 &nbsp;0123456789</h5>
+                <a href="#">Edit</a>
+            </div>
+            <div class="address_det">
+                <h4>Himanchal Singh </h3>
+                <p>Shop No 9, 57/a, Arsiwala Bldg, Wodehouse Rd, Colaba, Mumbai, Maharashtra,400005</p>
+                <h5>+91 &nbsp;0123456789</h5>
+                <a href="#">Edit</a>
+            </div>
+            <div class="address_det">
+                <h4>Himanchal Singh </h3>
+                <p>Shop No 9, 57/a, Arsiwala Bldg, Wodehouse Rd, Colaba, Mumbai, Maharashtra,400005</p>
+                <h5>+91 &nbsp;0123456789</h5>
+                <a href="#">Edit</a>
+            </div>
+            
+
+        </div>
+        <hr>
+        <div id="m_order">
+            <h3>Your Orders</h3>
+        </div>
+        <div class="order_table" style="overflow-x:auto;">
+            <!-- here style used for responsive of table if screen is small. -->
+            <table class="css-serial">
+                <thead>
+                    <tr class="w3-light-grey">
+                        <th>Sr No.</th>
+                        <th>Order Id</th>
+                        <th>Items</th>
+                        <th>Amount</th>
+                        <th>Date & Time</th>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <td>.</td>
+                    <td> <a href="/order_datail.html">OD5G7WOWAH</a> </td>
+                    <td>Sugar,Ghee,Atta,Rice,Oil,Match</td>
+                    <td>&#x20B9 650</td>
+                    <td>
+                        <span id="datetime"></span>
+
+                        <script>
+                            var dt = new Date();
+                            var hours = dt.getHours();
+                            var newformat = hours >= 12 ? 'PM' : 'AM';
+                            document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + " " + newformat;
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.</td>
+                    <td> <a href="/order_datail.html">OD5G7WOWAH</a> </td>
+                    <td>Sugar,Ghee,Atta,Rice,Oil,Match</td>
+                    <td>&#x20B9 650</td>
+                    <td>
+                        <span id="datetime"></span>
+
+                        <script>
+                            var dt = new Date();
+                            var hours = dt.getHours();
+                            var newformat = hours >= 12 ? 'PM' : 'AM';
+                            document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + " " + newformat;
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.</td>
+                    <td> <a href="/order_datail.html">OD5G7WOWAH</a> </td>
+                    <td>Sugar,Ghee,Atta,Rice,Oil,Match</td>
+                    <td>&#x20B9 650</td>
+                    <td>
+                        <span id="datetime"></span>
+
+                        <script>
+                            var dt = new Date();
+                            var hours = dt.getHours();
+                            var newformat = hours >= 12 ? 'PM' : 'AM';
+                            document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + " " + newformat;
+                        </script>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <div class="com_details">
+            <div class="about">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio, quaerat provident voluptatum
+                    voluptas nostrum dignissimos minima in itaque nam minus quisquam.</p>
+            </div>
+            <div class="det">
+                <h1>Company Details</h1>
+
+                <li>Your Company Ltd</li>
+
+                <li>1481 Creekside Lane Avila Beach, CA 93424, P.O. BOX 68</li>
+
+                <li>+53 345 7953 32453</li>
+
+                <li>office@youremail.com</li>
+
+
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>Copyright &copy; 2020 All rights reserved &nbsp;|&nbsp;Designed With <span class="heart"></span> by
+                Himanchal Singh </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

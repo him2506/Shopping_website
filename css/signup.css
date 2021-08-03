@@ -1,0 +1,75 @@
+* {box-sizing: border-box;}
+
+#login_form{
+    /* border: 3px solid red; */
+    width: 40%;
+    text-align: center;
+    margin: 50px auto;
+    opacity: 1;
+          
+}
+
+#login_form::before{
+    content: "";
+    /* background-color: rgb(125, 179, 125); */
+    background: url('/img/login.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#login_form h2{
+    font-size: 4rem;
+    color: white;
+    margin: 20px;
+}
+
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  /* background: dodgerblue; */
+  background: black;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+    /* isse jhan pr input dalte h vhan k box k border ko focus or highlight kr deta h. */
+  border: 2px solid dodgerblue;
+  border: 2px solid black;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}

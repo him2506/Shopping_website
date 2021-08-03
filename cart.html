@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Me</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/product_details.css">
+  <link rel="stylesheet" media="screen and (max-width: 950px)" href="css/phone.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a href="index.html" class="logo">
+          <h1>ShopMe</h1>
+        </a>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar_menu" id="navbarSupportedContent">
+
+          <ul class="nav_navbar">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Shop</a>
+              <div class="dropdown-content">
+                  <a href="/shop.html">Products</a>
+                  <a href="/product_details.html">Single Product</a>
+                  <a href="/profile.html">Profile</a>
+                  <a href="/login.html">Login</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="cart">
+              <a href="cart.html"><img src="/img/cart_icon.png" alt=""></a>
+            </li>
+
+          </ul>
+
+        </div>
+        <div class="search ">
+          <input type="search" name="" id="" placeholder="Search...">
+          <button type="submit">Search</button>
+
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- <div id="cart_view_h">
+    <section id="cart-view">
+      <h1>Your Shopping Bag</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="cart-view-area">
+              <div class="cart-view-table">
+                <form action="">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a class="remove" href="#">
+
+                              <i class="material-icons">&#xe872;</i>
+                            </a></td>
+                          <td><a href="#"><img src="img/product/25.jpg" alt="img"></a></td>
+                          <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
+                          <td>$250</td>
+                          <td><input class="aa-cart-quantity" type="number" value="1"></td>
+                          <td>$250</td>
+                        </tr>
+                        <tr>
+                          <td><a class="remove" href="#">
+                              <i class="material-icons">&#xe872;</i>
+                            </a></td>
+                          <td><a href="#"><img src="img/product/5.jpg" alt="img"></a></td>
+                          <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
+                          <td>$150</td>
+                          <td><input class="aa-cart-quantity" type="number" value="1"></td>
+                          <td>$150</td>
+                        </tr>
+                        <tr>
+                          <td><a class="remove" href="#">
+                              <i class="material-icons">&#xe872;</i>
+                            </a></td>
+                          <td><a href="#"><img src="img/product/8.jpg" alt="img"></a></td>
+                          <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
+                          <td>$50</td>
+                          <td><input class="aa-cart-quantity" type="number" value="1"></td>
+                          <td>$50</td>
+                        </tr>
+                        <tr>
+                          <td colspan="6" class="aa-cart-view-bottom">
+                            <div class="aa-cart-coupon">
+                              <input class="aa-coupon-code" type="text" placeholder="Coupon">
+                              <input class="aa-cart-view-btn" type="submit" value="Apply Coupon">
+                            </div>
+                            <input class="aa-cart-view-btn" type="submit" value="Update Cart">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </form>
+        
+
+                <div class="cart-view-total">
+                  <h4>Cart Totals</h4>
+                  <table class="aa-totals-table">
+                    <tbody>
+                      <tr>
+                        <th>Subtotal</th>
+                        <td>$450</td>
+                      </tr>
+                      <tr>
+                        <th>Total</th>
+                        <td>$450</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="#" class="aa-cart-view-btn">Proceed to Checkout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div> -->
+
+
+  
+  <div class="order_table" style="overflow-x:auto;">
+    <h1>Your Shopping Bag</h1>
+    <!-- here style used for responsive of table if screen is small. -->
+    <table>
+      <thead>
+        <tr class="w3-light-grey">
+
+          <th></th>
+          <th></th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Item Total</th>
+        </tr>
+      </thead>
+
+      <tr>
+
+        <td><a class="remove" href="#">
+
+            <i class="material-icons">&#xe872;</i>
+          </a></td>
+        <td><a  class="pr_img" href="#"><img src="img/product/8.jpg" alt="img"></a></td>
+        <td><a class="#" href="#">Polo T-Shirt</a></td>
+        <td>$50</td>
+        <td><input type="number" id="" name="" value="1" min="1"></td>
+        <td>$50</td>
+        </td>
+      </tr>
+      <tr>
+
+        <td><a class="remove" href="#">
+
+            <i class="material-icons">&#xe872;</i>
+          </a></td>
+        <td><a  class="pr_img" href="#"><img src="img/product/9.jpg" alt="img"></a></td>
+        <td><a class="#" href="#">Polo T-Shirt</a></td>
+        <td>$50</td>
+        <td><input type="number" id="" name="" value="1" min="1"></td>
+        <td>$50</td>
+        </td>
+      </tr>
+      <tr>
+
+        <td><a class="remove" href="#">
+
+            <i class="material-icons">&#xe872;</i>
+          </a></td>
+        <td><a  class="pr_img" href="#"><img src="img/product/10.jpg" alt="img"></a></td>
+        <td><a class="#" href="#">Polo T-Shirt</a></td>
+        <td>$50</td>
+        <td><input type="number" id="" name="" value="1" min="1"></td>
+        <td>$50</td>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" class="aa-cart-view-bottom">
+          <div class="aa-cart-coupon">
+            <input class="aa-coupon-code" type="text" placeholder="Coupon">
+            <input class="aa-cart-view-btn" type="submit" value="Apply Coupon">
+          </div>
+          <input class="aa-cart-view-btn" type="submit" value="Update Cart">
+        </td>
+      </tr>
+           
+  
+    </table>
+    
+  </div>
+  
+  <div class="cart_view_total">
+    <h4>Cart Totals</h4>
+    <table class="cart_view_total_table">
+      <tbody>
+        <tr>
+          <th>Subtotal</th>
+          <td>$450</td>
+        </tr>
+        <tr>
+          <th>Total</th>
+          <td>$450</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="#" class="aa-cart-view-btn">Proceed to Checkout</a>
+  </div>
+
+  <footer>
+    <div class="com_details">
+      <div class="about">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio, quaerat provident voluptatum voluptas
+          nostrum dignissimos minima in itaque nam minus quisquam.</p>
+      </div>
+      <div class="det">
+        <h1>Company Details</h1>
+
+        <li>Your Company Ltd</li>
+
+        <li>1481 Creekside Lane Avila Beach, CA 93424, P.O. BOX 68</li>
+
+        <li>+53 345 7953 32453</li>
+
+        <li>office@youremail.com</li>
+
+
+      </div>
+    </div>
+    <hr>
+    <div class="copyright">
+      <p>Copyright &copy; 2020 All rights reserved &nbsp;|&nbsp;Designed With <span class="heart"></span> by Himanchal
+        Singh </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

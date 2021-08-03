@@ -1,0 +1,142 @@
+.user_profile::before{
+    content: "";
+    background: url('/img/pro_bg5.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1200px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.user_profile{
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+    /* background-color: rgb(228, 144, 144); */
+}
+
+
+#photo_u_name{
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#photo_u_name span{
+    font-size: 2rem;
+    margin: 5px ;
+    color: rgb(247 6 173);
+
+}
+#photo_u_name img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+}
+
+#name_email_mob{
+    /* border: 2px solid blue; */
+    /* margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: white; */
+
+    display: flex;
+    flex-direction: column;
+    margin: 13px auto;
+    width: 82%;
+    font-size: 1.5rem;
+    background: white;
+    padding: 7px;
+    text-align: left;
+}
+
+#name_email_mob span{
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+#m_address {
+    /* border: 2px solid red; */
+    margin: 10px;
+    
+}
+#m_address h3{
+    font-size: 2rem;
+    margin: 10px;
+    border: 2px solid grey;
+    background-color: rgb(233, 233, 233);
+    padding: 8px 0px;
+}
+
+.address_det {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 85%;
+    font-size: 1.5rem;
+    background: white;
+    padding: 7px;
+    text-align: left;
+}
+.address_det h4,h5,p{
+    margin: 3px;
+}
+.address_det a{
+    margin: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#m_order{
+    /* border: 2px solid green; */
+    margin: 10px;
+}
+#m_order h3{
+    font-size: 2rem;
+    margin: 10px;
+    border: 2px solid grey;
+    background-color: rgb(233, 233, 233);
+    padding: 8px 0px;
+}
+
+
+
+.order_table{
+    width: 85%;
+    margin: 20px auto;
+    font-size: 1.5rem;  
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px 10px;      
+}
+td{
+    text-align: center;
+    height: 50px;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+tr:hover {background-color: gray;}
+/* tr:nth-child(even) {background-color: #f2f2f2;} */
+/* tr:nth-child(even) {background-color: #c79292;} */
+
+.css-serial {
+    counter-reset: serial-number;  /* Set the serial number counter to 0 */
+  }
+  
+  .css-serial td:first-child:before {
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+  }

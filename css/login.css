@@ -1,0 +1,13 @@
+#login_form{
+    /* border: 3px solid red; */
+    width: 30%;
+    text-align: center;
+    margin: 70px auto;
+    opacity: 1;
+          
+}
+#login_form h2{
+    font-size: 4rem;
+    color: white;
+    margin: 20px;
+}

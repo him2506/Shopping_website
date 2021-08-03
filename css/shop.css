@@ -1,0 +1,95 @@
+.shop_by_cat{
+    text-align: center;
+    margin: 50px 0px;
+}
+.shop_by_cat h1{
+    font-size: 3rem;
+}
+
+.cate{
+    border: 3px solid black;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.cate li{
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+}
+.cate li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+.cate li a:hover{
+    color: black;
+}
+.product h3{
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+#belt,#shoes,#bottle,#glasses,#purses,#bp,#skin_beauty{
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 8px;
+    width: 92%;
+    background-color: #e0d6da;
+}
+.belt_p{
+    border: 2px solid gainsboro;
+    margin: 5px;
+}
+
+
+
+
+.pro_type{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.pro_type img{
+    height: 30rem;
+    width: 20rem;
+}
+
+.pro_type .belt_p{
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+    padding: 10px 10px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+}
+.pro_type .details{
+    display: flex;
+    /* border: 2px solid brown; */
+    margin: 5px 5px;
+    padding: 5px;
+}
+.pro_type .details h2{
+    /* border: 2px solid cyan; */
+    width: 70%;
+    display: inline-block;
+    color: rgb(36, 35, 35);
+    font-weight: unset;
+    font-size: 1.3rem;
+}
+.pro_type .details h3{
+    /* border: 2px solid blue; */
+    float: right;
+    color: black;
+    font-size: 1.6rem;
+    
+}

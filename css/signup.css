@@ -12,7 +12,7 @@
 #login_form::before{
     content: "";
     /* background-color: rgb(125, 179, 125); */
-    background: url('/img/login.jpg') no-repeat center center/cover;
+    background: url('/login.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;

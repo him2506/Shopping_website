@@ -10,7 +10,7 @@
 }
 div .abt{
     /* border: 2px solid blue; */
-    background: url('/img/bg2.jpg') no-repeat center center/cover;
+    background: url('bg2.jpg') no-repeat center center/cover;
     /* width: 95%; */
     height: 35rem;
     display: flex;

@@ -96,7 +96,7 @@
 
 /* Section */
 .home_banner_area {
-    background: url('/img/bg.jpg') no-repeat center center/cover;
+    background: url('bg.jpg') no-repeat center center/cover;
     width: 100%;
     height: 500px;
    
@@ -217,7 +217,7 @@ footer .com_details div{
   /* About Page  */
   div .abt{
     /* border: 2px solid blue; */
-    background: url('/img/bg2.jpg') no-repeat center center/cover;
+    background: url('bg2.jpg') no-repeat center center/cover;
     /* width: 95%; */
     height: 40rem;
     display: flex;
